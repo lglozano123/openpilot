@@ -161,7 +161,7 @@ class opParams:
     VT = ValueTypes()
     self.fork_params = {
                         LAT_KP_BP: Param([0., 35.,], [list, float, int], live=True),
-                        LAT_KP_V: Param([0.28, 0.28], [list, float, int], live=True),
+                        LAT_KP_V: Param([0.25, 0.25], [list, float, int], live=True),
                         LAT_KI_BP: Param([0.,35], [list, float, int], live=True),
                         LAT_KI_V: Param([0.06, 0.06], [list, float, int], live=True),
                         LAT_KF: Param(6e-6, VT.number, live=True),
@@ -171,7 +171,7 @@ class opParams:
                         STOCK_DELTA_UP: Param(238, VT.number, live=True ,depends_on=SHOW_RATE_PARAMS),
                         STOCK_DELTA_DOWN: Param(238, VT.number, live=True ,depends_on=SHOW_RATE_PARAMS),
                         STOCK_STEER_MAX: Param(238, VT.number, live=True ,depends_on=SHOW_RATE_PARAMS),
-		                  	STEER_ACT_DELAY: Param(0.1, VT.number, live=True)
+		                  	STEER_ACT_DELAY: Param(0.25, VT.number, live=True)
 }
 
     self._params_file = '/data/op_params.json'
