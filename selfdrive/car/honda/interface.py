@@ -222,6 +222,7 @@ class CarInterface(CarInterfaceBase):
 
     elif candidate in (CAR.ODYSSEY, CAR.ODYSSEY_CHN):
       ret.mass = 1900. + STD_CARGO_KG
+        
     elif candidate in (CAR.ACCORD_NIDEC, CAR.ACCORD_NIDEC_HYBRID, CAR.V6ACCORD_NIDEC):
       stop_and_go = False
       ret.mass = 3279. * CV.LB_TO_KG + STD_CARGO_KG
